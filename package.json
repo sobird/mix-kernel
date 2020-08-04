@@ -1,0 +1,23 @@
+{
+  "name": "mix-kernel",
+  "version": "0.0.1",
+  "description": "The streaming build framework based on Middleware",
+  "main": "lib/mix-kernel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "sobird/mix-kernel",
+  "keywords": [
+    "mix-cli",
+    "mix-kernel",
+    "stream",
+    "middleware"
+  ],
+  "author": "sobird",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "map-stream": "0.0.7",
+    "vinyl-fs": "^3.0.3"
+  }
+}
