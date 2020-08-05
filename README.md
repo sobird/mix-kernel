@@ -12,7 +12,7 @@ const Mix = require('mix-kernel');
 const mix = new Mix();
 
 mix.use(ctx => {
-  ctx.vfs.contents = "Hello Mix";
+  ctx.content = "Hello Mix";
 });
 
 mix.release();

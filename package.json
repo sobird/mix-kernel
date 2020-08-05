@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^4.1.1",
+    "lodash": "^4.17.19",
     "map-stream": "0.0.7",
     "vinyl-fs": "^3.0.3"
   }
