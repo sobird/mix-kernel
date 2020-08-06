@@ -17,3 +17,28 @@ mix.use(ctx => {
 
 mix.release();
 ```
+
+## API
+
+### fork(something, [options], [skip])
+```
+const Mix = require('mix-kernel');
+const mix = new Mix();
+const browserify = require('browserify');
+
+mix.use(ctx => {
+  if(ctx.basename == "querystring.js") {
+    const b = browserify();
+    b.require('querystring');
+    
+    b.bundle((err, buf) => {
+      mix.fork(buf, {
+        // 该值不可为空，产出的文件名不能为空
+        path: './test/querystring.js'
+      }, false);
+    });
+  }
+});
+
+mix.release();
+```
