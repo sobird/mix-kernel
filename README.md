@@ -27,6 +27,7 @@ const mix = new Mix();
 const browserify = require('browserify');
 
 mix.use(ctx => {
+  // 此处的条件判断，需要注意循环依赖报错
   if(ctx.basename == "querystring.js") {
     const b = browserify();
     b.require('querystring');
